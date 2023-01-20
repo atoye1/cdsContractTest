@@ -29,7 +29,7 @@ jobs:
           pwd
 
       - name: Install node packages
-        run: npm install
+        run: npm install --production
 
       - name: Install ganache-cli
         run: npm install -g ganache-cli
@@ -38,7 +38,7 @@ jobs:
         run: ganache-cli &
 
       - name: Install truffle
-        run: npm install truffle
+        run: npm install -g truffle
 
       - name: Test with Truffle test
         run: truffle test --network local
