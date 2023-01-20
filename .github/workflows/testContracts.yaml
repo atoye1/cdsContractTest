@@ -23,6 +23,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: debug
+        run: |
+          ls -al
+          pwd
           
       - name: Install node packages
         run: npm install
