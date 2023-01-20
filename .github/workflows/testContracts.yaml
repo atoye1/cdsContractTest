@@ -13,7 +13,7 @@ jobs:
   contractTester:
     runs-on: ubuntu-latest
     env:
-      working-directory: ./contract
+      working-directory: .
 
     steps:
       - name: Checkout
@@ -27,8 +27,7 @@ jobs:
         run: |
           ls -al
           pwd
-          cd contract
-          
+
       - name: Install node packages
         run: npm install
 
