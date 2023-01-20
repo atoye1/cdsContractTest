@@ -37,5 +37,8 @@ jobs:
       - name: Launch ganache-cli network
         run: ganache-cli &
 
+      - name: Install truffle
+        run: npm install truffle
+
       - name: Test with Truffle test
         run: truffle test --network local
